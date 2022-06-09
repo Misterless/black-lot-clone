@@ -1,15 +1,13 @@
 import React from 'react';
+import AuthTemplate from '../components/auth/AuthTemplate';
+import RegisterForm from '../containers/auth/RegisterForm';
 
-const Home = () => {
-    return (
-        <div>
-            <h2>
-                회원등록
-                아이디 이메일 패스워드 주세요
-                
-            </h2>
-        </div>
-    );
+const RegisterPage = () => {
+  return (
+    <AuthTemplate>
+      <RegisterForm />
+    </AuthTemplate>
+  );
 };
 
-export default Home;
+export default RegisterPage;
